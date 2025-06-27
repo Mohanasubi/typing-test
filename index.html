@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing test</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <h1>DONKEY TYPING</h1>
+    <p class="subheading">Speed meets accuracy. Type to win!</p>
+    <div class="main-container">
+    <div class="side-container-1">
+     <div class="instructionHeader">
+     <p> Type the quote shown below as quickly and accurately as possible.Click "Restart" to try a new one.</p>
+     </div>
+    <div id="quoteDisplay"></div>
+     <input id="quoteInput" type="text" placeholder="Start typing here..." autofocus /><br>
+    <div class="retry-container">
+     <button id="retryBtn" class="icon-btn hidden" title="Retry" style="display: none;">
+      <i class="fas fa-rotate-right"></i>
+     </button>
+    </div>
+    </div>
+    <div class="side-container-2">
+       <div id="time">
+        <h2>Time Left</h2> 
+        <span id="timeDisplay">00:30:00</span>
+        </div>
+    
+     <div class="board">
+        <h2>Leaderboard</h2>
+        <div id="list">
+            <ul id="leaderboard"></ul>
+      </div>
+    </div>
+    </div>  
+  </div>
+
+  <div id="resultPopup" class="popup">
+    <div class="popup-content">
+      <h2>Test Results</h2>
+      <p><strong>Time Taken:</strong> <span id="popupTime">00:00:00</span>s</p>
+      <p><strong>WPM:</strong> <span id="popupWpm">0</span></p>
+      <p><strong>Accuracy:</strong> <span id="popupAccuracy">0</span>%</p>
+      <button id="closePopupBtn">Retry</button>
+    </div>
+  </div>
+
+
+    <script src="./dist/index.js"></script>
+</body>
+</html>
