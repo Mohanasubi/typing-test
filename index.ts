@@ -168,7 +168,7 @@ function calculateResults(correctChars: number, totalTyped: number) {
   const minutes = Math.floor(timeTakenMs / 60000);
   const seconds = Math.floor((timeTakenMs % 60000) / 1000);
   const milliseconds = Math.floor((timeTakenMs % 1000) / 10);
-  const formattedTime = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}.${String(milliseconds).padStart(2, '0')}`;
+  const formattedTime = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}:${String(milliseconds).padStart(2, '0')}`;
   popupTime.textContent = formattedTime;
 
   const originalWords = quote.trim().split(/\s+/);
